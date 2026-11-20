@@ -1,8 +1,12 @@
 # Moonlight English | The resource shelf
 
-[판매 페이지](https://moonlang.com/moonlight-english/) · [독립 화면](https://reasonofmoon.github.io/moonlight-english-shelf/)
+[판매 페이지](https://moonlang.com/moonlight-english/) · [독립 화면](https://devlog.moonlang.com/moonlight-english-shelf/)
 
 ## 상품 업데이트
+
+**간편한 방법:** [상품 목록 편집 도구](https://devlog.moonlang.com/moonlight-english-shelf/manage.html)에서 상품을 선택하거나 추가 → 목록에 적용 → 검증 후 다운로드 → GitHub에 catalog.json을 올리고 커밋합니다. 편집 도구에서 입력한 값은 커밋 전까지 공개되지 않습니다.
+
+직접 수정하는 방법:
 
 1. [catalog.json 편집](https://github.com/Reasonofmoon/moonlight-english-shelf/edit/main/catalog.json)에서 공개 TPT 상품만 추가·수정합니다. 중단 상품은 해당 객체를 제거합니다.
 2. 각 상품은 id(문자열), title, url(공식 구매 주소), cover(공개 표지 이미지 주소), rank(TPT Best Sellers 순위 숫자, 확인 불가 시 null)로 구성됩니다. 순위 중복은 허용하지 않습니다. TPT의 Most Recent 첫 상품 ID를 featured에, 확인 날짜를 updated에 YYYY-MM-DD로 입력합니다. 상품 수·검색·페이지·최신 표지·순서는 자동 계산됩니다.
