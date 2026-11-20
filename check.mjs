@@ -1,0 +1,1 @@
+import {readFile} from 'node:fs/promises';import {shelf} from './shelf.mjs';const data=JSON.parse(await readFile(new URL('./catalog.json',import.meta.url),'utf8'));const rows=shelf(data);console.log('OK:',rows.length,'public products; featured:',rows[0].id,'; updated:',data.updated);
